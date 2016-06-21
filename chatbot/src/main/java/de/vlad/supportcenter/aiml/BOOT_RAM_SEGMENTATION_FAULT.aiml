@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+<category>
+<pattern>RAM SEGMENTATION FAULT</pattern>
+<template>Eine Fehlermeldung bezüglich RAM Segmentation Faults betrifft in der Regel Ihren Arbeitsspeicher und stellt ein Problem dar, welches Sie nicht selber lösen sollten. Kontaktieren Sie bitte einen Reperatur Service.</template>
+</category>
+
+<category>
+<pattern>RAM SEGMENTATION FAULT *</pattern>
+<template><srai>RAM SEGMENTATION FAULT</srai></template>
+</category>
+
+<category>
+<pattern>* RAM SEGMENTATION FAULT</pattern>
+<template><srai>RAM SEGMENTATION FAULT</srai></template>
+</category>
+
+<category>
+<pattern>RAM SEGMENTATION</pattern>
+<template><srai>RAM SEGMENTATION FAULT</srai></template>
+</category>
+
+<category>
+<pattern>* RAM SEGMENTATION</pattern>
+<template><srai>RAM SEGMENTATION FAULT</srai></template>
+</category>
+
+<category>
+<pattern>RAM SEGMENTATION *</pattern>
+<template><srai>RAM SEGMENTATION FAULT</srai></template>
+</category>
+</aiml>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+<category>
+<pattern>SOUND * NICHT</pattern>
+<template>Hier wird Ihnen geholfen http://windows.microsoft.com/de-DE/windows-vista/Tips-for-fixing-common-sound-problems</template>
+</category>
+
+<category>
+<pattern>* SOUND * NICHT</pattern>
+<template><srai>SOUND * NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* SOUND * NICHT *</pattern>
+<template><srai>SOUND * NICHT</srai></template>
+</category>
+
+</aiml>

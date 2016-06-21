@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>* WINDOWS LOGO</pattern>
+<template>Sollte Ihr System sich beim Bootvorgang während dem Windows Logo aufhängen, kann das mehrere Gründer haben. In aller Regel sind Fehler beim Laden von Kernel und Treibern dafür verantwortlich. Versuchen Sie, Ihren Rechner im abgesicherten Modus zu starten oder booten Sie von der Windows Installations CD, um die Reperatur auszuführen. </template>
+</category>
+
+
+<category>
+<pattern>* WINDOWS LOGO *</pattern>
+<template><srai>* WINDOWS LOGO</srai></template>
+</category>
+
+
+</aiml>

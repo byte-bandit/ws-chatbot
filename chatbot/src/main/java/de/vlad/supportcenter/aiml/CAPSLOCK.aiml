@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>CAPSLOCK</pattern>
+<template>
+Die Capslock Taste finden Sie über der normalen Hochstelltaste.</template>
+</category>
+
+<category>
+<pattern>* CAPSLOCK</pattern>
+<template><srai>CAPSLOCK</srai></template>
+</category>
+
+<category>
+<pattern>* CAPSLOCK *</pattern>
+<template><srai>CAPSLOCK</srai></template>
+</category>
+
+<category>
+<pattern>* GROß</pattern>
+<template><srai>CAPSLOCK</srai></template>
+</category>
+
+<category>
+<pattern>* GROßBUCHSTABEN</pattern>
+<template><srai>CAPSLOCK</srai></template>
+</category>
+
+<category>
+<pattern>* GROßBUCHSTABEN *</pattern>
+<template><srai>CAPSLOCK</srai></template>
+</category>
+
+</aiml>

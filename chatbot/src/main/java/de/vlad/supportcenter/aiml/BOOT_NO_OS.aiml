@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the OS not found Error during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>NOT BOOT</pattern>
+<template>Wenn Ihr System nicht hochfährt, kann das für gewöhnlich mehrere Gründe haben. Oft können externe Festplatten oder ähnliche Vorrichtungen Probleme beim Startvorgang des Systems verursachen. Entfernen Sie alle nicht zwangsläufig benötigten USB Geräte und versuchen Sie es erneut. Sollte es anschließend immer noch nicht funktionieren, spezifizieren Sie Ihr Problem bitte genauer oder setzen sich mit einem Reperatur Dienst in Verbindung.</template>
+</category>
+
+<category>
+<pattern>* NOT BOOT</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>NOT BOOT *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>* NOT BOOT *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>NO BOOT</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>* NO BOOT</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>NO BOOT *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>* NO BOOT *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>FÄHRT NICHT HOCH</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>* FÄHRT NICHT HOCH</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>FÄHRT NICHT HOCH *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+
+<category>
+<pattern>* FÄHRT NICHT HOCH *</pattern>
+<template><srai>NOT BOOT</srai></template>
+</category>
+</aiml>

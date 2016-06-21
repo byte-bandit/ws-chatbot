@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+
+<category>
+<pattern>*</pattern>
+<template>
+<condition name="rid">
+	<li value="2"><think><set name="rid">1</set></think>Es tut mir sehr leid. Ich kann Sie immer noch nicht verstehen. Eventuell habe ich auch noch kein Wissen über Ihr Problemgebiet. Ich empfehle Ihnen, sich direkt mit dem Service Desk verbinden zu lassen.</li>
+	<li value="1"><think><set name="rid">2</set></think>Das verstehe ich leider nicht so richtig. Bitte versuchen Sie, die Frage umzustellen oder andere Wörter zu verwenden.</li>
+	<li><think><set name="rid">1</set></think>Leider verstehe ich Ihre Frage nicht richtig. Bitte versuchen Sie, die Frage umzustellen oder andere Wörter zu verwenden.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>DATEI HOCHGELADEN</pattern>
+<template>Es tut mir Leid, aber ich kann momentan mit Ihren Dateien nichts anfangen.</template>
+</category>
+
+<category>
+<pattern>ARSCHLOCH</pattern>
+<template>Na! Sowas verbitte ich mir!</template>
+</category>
+
+<category>
+<pattern>* ARSCHLOCH</pattern>
+<template><srai>ARSCHLOCH</srai></template>
+</category>
+
+
+<category>
+<pattern>* ARSCHLOCH *</pattern>
+<template><srai>ARSCHLOCH</srai></template>
+</category>
+
+<category>
+<pattern>ARSCHLOCH *</pattern>
+<template><srai>ARSCHLOCH</srai></template>
+</category>
+
+<category>
+<pattern>PENNER</pattern>
+<template>Selber!</template>
+</category>
+
+<category>
+<pattern>* PENNER</pattern>
+<template><srai>PENNER</srai></template>
+</category>
+
+<category>
+<pattern>* PENNER *</pattern>
+<template><srai>PENNER</srai></template>
+</category>
+
+<category>
+<pattern>PENNER *</pattern>
+<template><srai>PENNER</srai></template>
+</category>
+
+
+</aiml>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the KEYBOARD ERROR during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>KEYBOARD ERROR</pattern>
+<template>Der Fehler Keyboard Error während dem Hochfahren Ihres Systems deutet auf ein Problem mit Ihrer Tastatur hin. Überprüfen Sie, ob diese korrekt an Ihrem Computer angeschlossen ist, und probieren Sie es falls möglich mit einer anderen Tastatur. Sollte der Fehler bestehen bleiben, kontaktieren Sie am Besten einen Reperatur Service.</template>
+</category>
+
+<category>
+<pattern>KEYBOARD ERROR *</pattern>
+<template><srai>KEYBOARD ERROR</srai></template>
+</category>
+
+<category>
+<pattern>* KEYBOARD ERROR</pattern>
+<template><srai>KEYBOARD ERROR</srai></template>
+</category>
+</aiml>

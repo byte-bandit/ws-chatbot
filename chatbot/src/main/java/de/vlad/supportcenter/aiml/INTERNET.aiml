@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>INTERNET GEHT NICHT</pattern>
+<template><think><set name="inet">2</set></think>Versuchen Sie die Verschlüsselung im Router auszuschalten. Wie das genau geht, erfahren Sie in http://www.google.de/. Teilen Sie mir dann mit, ob Ihr Internet wieder funktioniert oder nicht. (Ja / Nein)</template>
+</category>
+
+<category>
+<pattern>NEIN</pattern>
+<template><condition name="inet">
+<li value="6"><think><set name="inet">1</set></think>Am besten setzten Sie sich mit einem Service Team in Verbindung.</li>
+<li value="5"><think><set name="inet">6</set></think>War die Internet Verbindung auf dem Gerät früher da?</li>
+<li value="4"><think><set name="inet">5</set></think>Kriegen andere Geräte über den selben Kabel eine Internetverbindung?</li>
+<li value="3"><think><set name="inet">4</set></think>Versuchen Sie den Virenscanner und Firewall auszuschalten.  Wie das genau geht, erfahren Sie in http://www.google.de/. Teilen Sie mir dann mit, ob Ihr Internet wieder funktioniert oder nicht.</li>
+<li value="2"><think><set name="inet">3</set></think>Machen Sie einen WLAN Treiber Update. Mehr hierzu erfahren Sie hier: http://www.treiberupdate.de/treiber-download/hersteller-WLan.html Funktioniert es wieder? (Ja / Nein)</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>JA</pattern>
+<template>
+<condition name="inet">
+<li value="6">Versuchen Sie, das Ihren Router neu zu starten oder das Endgerät neu aufzusetzen. Sollte dies ebenfalls erfolglos bleiben, wenden Sie sich bitte an einen Techniker.</li>
+<li value="5">Versuchen Sie, das Ihren Router neu zu starten. Sollte dies ebenfalls erfolglos bleiben, wenden Sie sich bitte an einen Techniker.</li>
+<li>Freut mich, dass ich helfen konnte.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>INTERNET GEHT NICHT *</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* INTERNET GEHT NICHT *</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* INTERNET GEHT NICHT</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* KEIN INTERNET ZUGRIFF</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* KEIN INTERNET ZUGRIFF *</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* KEIN INTERNETZUGRIFF</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* KEIN INTERNETZUGRIFF *</pattern>
+<template><srai>INTERNET GEHT NICHT</srai></template>
+</category>
+
+</aiml>

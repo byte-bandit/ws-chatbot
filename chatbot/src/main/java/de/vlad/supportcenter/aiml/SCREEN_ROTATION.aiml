@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>BILD GEDREHT</pattern>
+<template>Das Bild lässt sich mit Tastenkürzel Strg+Alt+Pfeiltaste Oben in die normale Position zurückdrehen.</template>
+</category>
+
+<category>
+<pattern>* BILD GEDREHT</pattern>
+<template><srai>BILD GEDREHT</srai></template>
+</category>
+
+<category>
+<pattern>* BILD GEDREHT *</pattern>
+<template><srai>BILD GEDREHT</srai></template>
+</category>
+
+<category>
+<pattern>* BILD AUF DEM KOPF</pattern>
+<template><srai>BILD GEDREHT</srai></template>
+</category>
+
+<category>
+<pattern>* BILD AUF DEM KOPF *</pattern>
+<template><srai>BILD GEDREHT</srai></template>
+</category>
+
+</aiml>

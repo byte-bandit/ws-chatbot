@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>GRAFIKPROBLEME</pattern>
+<template>Installieren Sie den Grafikkartentreiber neu. Wie das genau geht, fragen Sie http://google.de</template>
+</category>
+
+<category>
+<pattern>* GRAFIKPROBLEME</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>FALSCHE AUFLÖSUNG</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>* FALSCHE AUFLÖSUNG</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>* FALSCHE AUFLÖSUNG *</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>FARBFEHLER</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>* FARBFEHLER</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+<category>
+<pattern>* FARBFEHLER *</pattern>
+<template><srai>GRAFIKPROBLEME</srai></template>
+</category>
+
+
+</aiml>

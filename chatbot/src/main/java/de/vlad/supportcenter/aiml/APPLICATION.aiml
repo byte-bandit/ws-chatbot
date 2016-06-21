@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+
+<category>
+<pattern>ANWENDUNG STARTET NICHT</pattern>
+<template>Die Anwendung ist entweder mit Ihrem Betriebssystem nicht kompatibel oder fehlerhaft (evtl. ein Virus)?</template>
+</category>
+
+<category>
+<pattern>* ANWENDUNG STARTET NICHT</pattern>
+<template><srai>ANWENDUNG STARTET NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* ANWENDUNG STARTET NICHT *</pattern>
+<template><srai>ANWENDUNG STARTET NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* ANWENDUNG STÜRZT AB</pattern>
+<template><srai>ANWENDUNG STARTET NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* ANWENDUNG STÜRZT AB *</pattern>
+<template><srai>ANWENDUNG STARTET NICHT</srai></template>
+</category>
+
+
+</aiml>

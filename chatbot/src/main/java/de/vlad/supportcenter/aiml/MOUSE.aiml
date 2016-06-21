@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>MAUS * NICHT</pattern>
+<template><think><set name="mouse">2</set></think>Versuchen Sie die Maus in einen anderen USB Port einzustecken. Funktioniert die Maus jetzt?</template>
+</category>
+
+<category>
+<pattern>JA</pattern>
+<template>
+<condition name="mouse" value="2">
+<think><set name="mouse">1</set></think>Freut mich zu hören.
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>NEIN</pattern>
+<template>
+<condition name="mouse" value="2">
+<think><set name="mouse">1</set></think>Ihre Maus könnte evtl. defekt sein.
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>* MAUS * NICHT</pattern>
+<template><srai>MAUS * NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* MAUS * NICHT *</pattern>
+<template><srai>MAUS * NICHT</srai></template>
+</category>
+
+<category>
+<pattern>MAUS * NICHT *</pattern>
+<template><srai>MAUS * NICHT</srai></template>
+</category>
+
+<category>
+<pattern>* JA *</pattern>
+<template><srai>JA</srai></template>
+</category>
+
+<category>
+<pattern>* JA</pattern>
+<template><srai>JA</srai></template>
+</category>
+
+<category>
+<pattern>JA *</pattern>
+<template><srai>JA</srai></template>
+</category>
+
+<category>
+<pattern>NEIN *</pattern>
+<template><srai>NEIN</srai></template>
+</category>
+
+<category>
+<pattern>* NICHT</pattern>
+<template><srai>NEIN</srai></template>
+</category>
+
+<category>
+<pattern>NEIN</pattern>
+<template>Schade</template>
+</category>
+
+<category>
+<pattern>Ja</pattern>
+<template>Wunderbar</template>
+</category>
+
+</aiml>

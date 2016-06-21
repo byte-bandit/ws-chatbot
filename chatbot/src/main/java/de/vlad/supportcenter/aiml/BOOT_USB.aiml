@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>* FÄHRT NICHT HOCH</pattern>
+<template>Versuchen Sie, alle nicht unbedingt nötigen USB Geräte von Ihrem Rechner zu entfernen und starten Sie das Gerät erneut. Öfter kommt es vor, dass Geräte wie externe Festplatten den Bootvorgang behindern. Sollte ihr Rechner anschließend immer noch nicht hochfahren, wenden Sie sich bitte an einen Reperatur Dienst.</template>
+</category>
+
+
+<category>
+<pattern>* FÄHRT NICHT HOCH *</pattern>
+<template><srai>* FÄHRT NICHT HOCH</srai></template>
+</category>
+
+<category>
+<pattern>* FÄHRT NICHT * HOCH</pattern>
+<template><srai>* FÄHRT NICHT HOCH</srai></template>
+</category>
+
+<category>
+<pattern>* FÄHRT NICHT * HOCH *</pattern>
+<template><srai>* FÄHRT NICHT HOCH</srai></template>
+</category>
+
+</aiml>

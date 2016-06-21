@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>TASTATUR</pattern>
+<template>Tastaturlayout können Sie ändern, indem Sie diese Anleitung befolgen: http://windows.microsoft.com/de-DE/windows-vista/Change-your-keyboard-layout</template>
+</category>
+
+<category>
+<pattern>* TASTATUR</pattern>
+<template><srai>TASTATUR</srai></template>
+</category>
+
+<category>
+<pattern>* TASTATUR *</pattern>
+<template><srai>TASTATUR</srai></template>
+</category>
+
+<category>
+<pattern>* Z STATT Y</pattern>
+<template><srai>TASTATUR</srai></template>
+</category>
+
+<category>
+<pattern>* Y STATT Z</pattern>
+<template><srai>TASTATUR</srai></template>
+</category>
+
+</aiml>

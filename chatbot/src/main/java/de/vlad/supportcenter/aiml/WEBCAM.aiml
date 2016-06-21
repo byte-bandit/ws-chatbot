@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>WEBCAM</pattern>
+<template>Überprüfen Sie, ob die Webcam korrekt mit dem PC verbunden ist und installieren Sie den Webcamtreiber neu. Falls sie Fragen oder weitere Probleme haben, wenden Sie sich bitte an den Hersteller Ihrer Webcam.</template>
+</category>
+
+<category>
+<pattern>* WEBCAM</pattern>
+<template><srai>WEBCAM</srai></template>
+</category>
+
+<category>
+<category>
+<pattern>* WEBCAM *</pattern>
+<template><srai>WEBCAM</srai></template>
+</category>
+
+<category>
+<pattern>WEBCAM *</pattern>
+<template><srai>WEBCAM</srai></template>
+</category>
+
+
+</aiml>

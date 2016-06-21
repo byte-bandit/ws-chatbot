@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for Master Boot Record Problems
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>MASTER BOOT RECORD</pattern>
+<template>Probleme mit Ihrem Master Boot Record können Sie in der Regel über die Windows Installations CD beheben, in dem Sie diese in Ihr CD/DVD Laufwerk legen und Ihren Rechner neu starten. In der Regel bootet Ihr System jetzt automatisch in das Installationsmenü der CD. Von hier aus wählen Sie bitte die Reparatur-Option und folgen den Anweisungen auf Ihrem Bildschirm.</template>
+</category>
+
+<category>
+<pattern>MASTER BOOT RECORD *</pattern>
+<template><srai>MASTER BOOT RECORD</srai></template>
+</category>
+
+<category>
+<pattern>* MASTER BOOT RECORD</pattern>
+<template><srai>MASTER BOOT RECORD</srai></template>
+</category>
+
+</aiml>

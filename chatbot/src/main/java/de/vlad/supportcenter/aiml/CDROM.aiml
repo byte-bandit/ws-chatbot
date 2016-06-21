@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+This file holds informations for the RAM Segmentation Fault during Bootup
+-->
+
+<aiml version="1.0.1" xmlns:aiml="http://alicebot.org/2001/AIML-1.0.1">
+
+<category>
+<pattern>CD LAUFWERK</pattern>
+<template><think><set name="cdrom">2</set></think>Kann das Laufwerk geöffnet werden? (Ja / Nein)</template>
+</category>
+
+<category>
+<pattern>NEIN</pattern>
+<template><condition name="cdrom">
+<li value="2"><think><set name="cdrom">1</set></think>Versuchen Sie Ihr Rechnergehäuse aufzuschrauben und prüfen Sie am Laufwerk und am Mainboard die Steckverbinder. Wenn Sie nicht wissen oder sich nicht trauen den Eingriff in Ihren PC zu tätigen, , setzten Sie sich mit einem Service Team in Verbindung.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>JA</pattern>
+<template>
+<condition name="cdrom">
+<li value="2"><think><set name="cdrom">1</set></think>Versuchen Sie, das Gerät im Gerätemanager zu aktivieren bzw. neu zu installieren. Sollte dies ebenfalls erfolglos bleiben, wenden Sie sich bitte an einen Techniker.</li>
+<li>Freut mich, dass ich helfen konnte.</li>
+</condition>
+</template>
+</category>
+
+<category>
+<pattern>CD LAUFWERK * NICHT</pattern>
+<template><srai>CD LAUFWERK</srai></template>
+</category>
+
+<category>
+<pattern>* CD LAUFWERK * NICHT</pattern>
+<template><srai>CD LAUFWERK</srai></template>
+</category>
+
+<category>
+<pattern>* CD LAUFWERK * NICHT *</pattern>
+<template><srai>CD LAUFWERK</srai></template>
+</category>
+
+<category>
+<pattern>CD LAUFWERK * NICHT *</pattern>
+<template><srai>CD LAUFWERK</srai></template>
+</category>
+</aiml>
